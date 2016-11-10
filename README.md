@@ -77,6 +77,8 @@ sometimes word-for-word in Google's coaching notes.
 
 - [Additional Books](#additional-books)
 - [Additional Learning](#additional-learning)
+    - [Compilers](#compilers)
+    - [Floating Point Numbers](#floating-point-numbers)
     - [Unicode](#unicode)
     - [Endianness](#endianness)
     - [Emacs and vi(m)](#emacs-and-vim)
@@ -94,8 +96,11 @@ sometimes word-for-word in Google's coaching notes.
     - [Messaging, Serialization, and Queueing Systems](#messaging-serialization-and-queueing-systems)
     - [Fast Fourier Transform](#fast-fourier-transform)
     - [Bloom Filter](#bloom-filter)
+    - [HyperLogLog](#hyperloglog)
+    - [Locality-Sensitive Hashing](#locality-sensitive-hashing)
     - [van Emde Boas Trees](#van-emde-boas-trees)
     - [Augmented Data Structures](#augmented-data-structures)
+    - [k-D Trees](#k-d-trees)
     - [Skip lists](#skip-lists)
     - [Network Flows](#network-flows)
     - [Disjoint Sets & Union Find](#disjoint-sets--union-find)
@@ -219,6 +224,7 @@ Sometimes the classes are not in session so you have to wait a couple of months,
 ## Interview Process & General Interview Prep
 
 - [ ] Videos:
+    - [ ] [How to Work at Google: Prepare for an Engineering Interview (video)](https://www.youtube.com/watch?v=ko-KkSmp-Lk)
     - [ ] [How to Work at Google - Candidate Coaching Session (video)](https://www.youtube.com/watch?v=oWbUtlUhwa8&feature=youtu.be)
     - [ ] [Google Recruiters Share Technical Interview Tips (video)](https://www.youtube.com/watch?v=qc1owf2-220&feature=youtu.be)
     - [ ] [How to Work at Google: Tech Resume Preparation (video)](https://www.youtube.com/watch?v=8npJLXkcmu8)
@@ -354,19 +360,16 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
 
 ## Prerequisite Knowledge
 
+- [ ] **Learn C**
+    - C is everywhere. You'll see examples in books, lectures, videos, *everywhere* while you're studying.
+    - [ ] [C Programming Language, Vol 2](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628)
+        - This is a short book, but it will give you a great handle on the C language and if you practice it a little 
+            you'll quickly get proficient. Understanding C helps you understand how programs and memory work.
+        - [answers to questions](https://github.com/lekkas/c-algorithms) 
+
 - [ ] **How computers process a program:**
     - [ ] [How does CPU execute program (video)](https://www.youtube.com/watch?v=42KTvGYQYnA)
     - [ ] [Machine Code Instructions (video)](https://www.youtube.com/watch?v=Mv2XQgpbTNE)
-
-- [ ] **Compilers**
-    - [ ] [How a Compiler Works in ~1 minute (video)](https://www.youtube.com/watch?v=IhC7sdYe-Jg)
-    - [ ] [Harvard CS50 - Compilers (video)](https://www.youtube.com/watch?v=CSZLNYF4Klo)
-    - [ ] [C++ (video)](https://www.youtube.com/watch?v=twodd1KFfGk)
-    - [ ] [Understanding Compiler Optimization (C++) (video)](https://www.youtube.com/watch?v=FnGCDLhaxKU)
-
-- [ ] **How floating point numbers are stored:**
-    - [ ] simple 8-bit: [Representation of Floating Point Numbers - 1 (video - there is an error in calculations - see video description)](https://www.youtube.com/watch?v=ji3SfClm8TU)
-    - [ ] 32 bit: [IEEE754 32-bit floating point binary (video)](https://www.youtube.com/watch?v=50ZYcZebIec)
 
 ## Algorithmic complexity / Big-O / Asymptotic analysis
 - nothing to implement
@@ -929,7 +932,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - [ ] [NP Completeness III (Video)](https://www.youtube.com/watch?v=fCX1BGT3wjE&index=17&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
         - [ ] [NP Completeness IV (video)](https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18)
     - [ ] Skiena:
-        - [ ] [CSE373 2012 - Lecture 23 - Introduction to NP-CompletenessNP Completeness IV (video)](https://youtu.be/KiK5TVgXbFg?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=1508)
+        - [ ] [CSE373 2012 - Lecture 23 - Introduction to NP-Completeness (video)](https://youtu.be/KiK5TVgXbFg?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=1508)
         - [ ] [CSE373 2012 - Lecture 24 - NP-Completeness Proofs (video)](https://www.youtube.com/watch?v=27Al52X3hd4&index=24&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
         - [ ] [CSE373 2012 - Lecture 25 - NP-Completeness Challenge (video)](https://www.youtube.com/watch?v=xCPH4gwIIXM&index=25&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
     - [ ] [Complexity: P, NP, NP-completeness, Reductions (video)](https://www.youtube.com/watch?v=eHZifpgyH_4&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=22)
@@ -950,7 +953,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
 
 - ### Processes and Threads
     - [ ] Computer Science 162 - Operating Systems (25 videos):
-        - for precesses and threads see videos 1-11
+        - for processes and threads see videos 1-11
         - [Operating Systems and System Programming (video)](https://www.youtube.com/playlist?list=PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c)
     - [What Is The Difference Between A Process And A Thread?](https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread)
     - Covers:
@@ -1010,7 +1013,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - [ ] [Numbers Everyone Should Know](http://everythingisdata.wordpress.com/2009/10/17/numbers-everyone-should-know/)
     - [ ] [How long does it take to make a context switch?](http://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html)
     - [ ] [Transactions Across Datacenters (video)](https://www.youtube.com/watch?v=srOgpXECblk)
-    - [ ] [A plain english introduction to CAP Theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem/)
+    - [ ] [A plain English introduction to CAP Theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem/)
     - [ ] Paxos Consensus algorithm:
         - [short video](https://www.youtube.com/watch?v=s8JqcZtvnsM)
         - [extended video with use case and multi-paxos](https://www.youtube.com/watch?v=JEpsBg0AO6o)
@@ -1189,12 +1192,12 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - [Table Doubling, Karp-Rabin](https://www.youtube.com/watch?v=BRO7mVIFt08&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=9)
         - [Rolling Hashes, Amortized Analysis](https://www.youtube.com/watch?v=w6nuXg0BISo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=32)
     - [ ] Knuth-Morris-Pratt (KMP):
-        - [Pratt Algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
-        - [Tutorial: The Knuth-Morris-Pratt (KMP) String Matching Algorithm](https://www.youtube.com/watch?v=2ogqPWJSftE)
+        - [TThe Knuth-Morris-Pratt (KMP) String Matching Algorithm](https://www.youtube.com/watch?v=5i7oKodCRJo)
     - [ ] Boyer–Moore string search algorithm
         - [Boyer-Moore String Search Algorithm](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm)
         - [Advanced String Searching Boyer-Moore-Horspool Algorithms (video)](https://www.youtube.com/watch?v=QDZpzctPf10)
     - [ ] [Coursera: Algorithms on Strings](https://www.coursera.org/learn/algorithms-on-strings/home/week/1)
+    - [ ] [Suffix Arrays (video)](https://www.youtube.com/watch?v=HKPrVm5FWvg)
 
 ---
 
@@ -1251,6 +1254,19 @@ Supplemental:
 
 **Read as a review and problem recognition**
 - [ ] [Algorithm Design Manual](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) (Skiena)
+    - This book has 2 parts:
+        - class textbook on data structures and algorithms
+            - pros: 
+                - is a good review as any algorithms textbook would be
+                - nice stories from his experiences solving problems in industry and academia
+                - code examples in C
+            - cons:
+                - can be as dense or impenetrable as CLRS, and in some cases CLRS may be a better alternative for some subjects
+                - chapters 7, 8, 9 can be painful to try to follow, as some items are not explained well or require more brain than I have
+                - don't get me wrong: I like Skiena, his teaching style, and mannerisms, but I may not be Stony Brook material.
+        - algorithm catalog:
+            - this is the real reason you buy this book.
+            - about to get to this part. Will update here once I've made my way through it.
     - To quote Yegge: "More than any other book it helped me understand just how astonishingly commonplace
         (and important) graph problems are – they should be part of every working programmer's toolkit. The book also
         covers basic data structures and sorting algorithms, which is a nice bonus. But the gold mine is the second half
@@ -1273,14 +1289,42 @@ Supplemental:
 
 **If you have time**
 - [ ] [Programming Pearls](http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880)
-- [ ] [Algorithms and Programming: Problems and Solutions](http://www.amazon.com/Algorithms-Programming-Solutions-Alexander-Shen/dp/0817638474)
-- [ ] [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
-    - To quote Yegge: "But if you want to come into your interviews *prepped*, then consider deferring your application until you've made your way through that book."
-    - Half.com is a great resource for textbooks at good prices.
-    - aka CLR, sometimes CLRS, because Stein was late to the game
+    - The first couple of chapters present clever solutions to programming problems (some very old using data tape) but
+      that is just an intro. This a guidebook on program design and architecture, much like Code Complete, but much shorter.
+- [ ] [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
+    - This is a great book for review of CS concepts, and a very quick read.
+    - Did not have as much Python code as I had hoped for, but has a great chapter on dynamic programming, so I worked through that and finally got the concept.
+- [ ] [Write Great Code: Volume 1: Understanding the Machine](https://www.amazon.com/Write-Great-Code-Understanding-Machine/dp/1593270038)
+    - The book was published in 2004, and is a bit outdated, but it's a terrific resource for understanding a computer.
+    - The author invented HLA, so take mentions and examples in HLA with a grain of salt. Not widely used, but decent examples of what assembly looks like.
+    - These chapters are worth the read to give you a nice foundation:
+        - Chapter 2 - Numeric Representation
+        - Chapter 3 - Binary Arithmetic and Bit Operations
+        - Chapter 4 - Floating-Point Representation
+        - Chapter 5 - Character Representation
+        - Chapter 6 - Memory Organization and Access
+        - Chapter 7 - Composite Data Types and Memory Objects
+        - Chapter 9 - CPU Architecture
+        - Chapter 10 - Instruction Set Architecture
+        - Chapter 11 - Memory Architecture and Organization 
+    - For a richer, more up-to-date (2011), but longer treatment, pick up [Computer Architecture, Fifth Edition: A Quantitative Approach](https://www.amazon.com/dp/012383872X/)
 - [ ] [Elements of Programming Interviews](https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836)
     - all code is in C++, if you're looking to use C++ in your interview
     - good book on problem solving in general.
+
+**Perhaps**
+- [ ] [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
+    - **Important:** Reading this book will only have limited value. This book is a great review of algorithms and data
+     structures, but won't teach you how to write good code. You have to be able to code a decent solution efficiently.
+    - To quote Yegge: "But if you want to come into your interviews *prepped*, then consider deferring your application until you've made your way through that book."
+    - Half.com is a great resource for textbooks at good prices.
+    - aka CLR, sometimes CLRS, because Stein was late to the game
+    
+**Removed** 
+- ~~"Algorithms and Programming: Problems and Solutions" by Shen~~
+    - A fine book, but after working through problems on several pages I got frustrated with the Pascal, do while loops, 1-indexed arrays, and unclear post-condition satisfaction results. 
+    - Would rather spend time on coding problems from another book or online coding problems.
+
 
 ## Coding exercises/challenges
 
@@ -1374,8 +1418,6 @@ You're never really done.
 
 ## Additional Books
 
-- [ ] [C Programming Language, Vol 2](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628)
-    - [answers to questions](https://github.com/lekkas/c-algorithms)
 - [ ] [The Unix Programming Environment](http://product.half.ebay.com/The-UNIX-Programming-Environment-by-Brian-W-Kernighan-and-Rob-Pike-1983-Other/54385&tg=info)
     - an oldie but a goodie
 - [ ] [The Linux Command Line: A Complete Introduction](https://www.amazon.com/dp/1593273894/)
@@ -1391,6 +1433,16 @@ You're never really done.
 - [ ] [UNIX and Linux System Administration Handbook, 4th Edition](https://www.amazon.com/UNIX-Linux-System-Administration-Handbook/dp/0131480057/)
 
 ## Additional Learning
+
+- ### Compilers
+    - [ ] [How a Compiler Works in ~1 minute (video)](https://www.youtube.com/watch?v=IhC7sdYe-Jg)
+    - [ ] [Harvard CS50 - Compilers (video)](https://www.youtube.com/watch?v=CSZLNYF4Klo)
+    - [ ] [C++ (video)](https://www.youtube.com/watch?v=twodd1KFfGk)
+    - [ ] [Understanding Compiler Optimization (C++) (video)](https://www.youtube.com/watch?v=FnGCDLhaxKU)
+
+- ### Floating Point Numbers
+    - [ ] simple 8-bit: [Representation of Floating Point Numbers - 1 (video - there is an error in calculations - see video description)](https://www.youtube.com/watch?v=ji3SfClm8TU)
+    - [ ] 32 bit: [IEEE754 32-bit floating point binary (video)](https://www.youtube.com/watch?v=50ZYcZebIec)
 
 - ### Unicode
     - [ ] [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets]( http://www.joelonsoftware.com/articles/Unicode.html)
@@ -1567,6 +1619,7 @@ You're never really done.
     - [ ] [Avro](https://avro.apache.org/)
 
 - ### Fast Fourier Transform
+    - [ ] [An Interactive Guide To The Fourier Transform](https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/)
     - [ ] [What is a Fourier transform? What is it used for?](http://www.askamathematician.com/2012/09/q-what-is-a-fourier-transform-what-is-it-used-for/)
     - [ ] [What is the Fourier Transform? (video)](https://www.youtube.com/watch?v=Xxut2PN-V8Q)
     - [ ] [Divide & Conquer: FFT (video)](https://www.youtube.com/watch?v=iTMn0Kt18tg&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=4)
@@ -1579,12 +1632,26 @@ You're never really done.
     - [Tutorial](http://billmill.org/bloomfilter-tutorial/)
     - [How To Write A Bloom Filter App](http://blog.michaelschmatz.com/2016/04/11/how-to-write-a-bloom-filter-cpp/)
 
+- ### HyperLogLog
+    - [How To Count A Billion Distinct Objects Using Only 1.5KB Of Memory](http://highscalability.com/blog/2012/4/5/big-data-counting-how-to-count-a-billion-distinct-objects-us.html)
+
+- ### Locality-Sensitive Hashing
+    - used to determine similarity of documents
+    - the opposite of md5 or sha which are used to determine if 2 documents/strings are exactly the same.
+    - [Simhashing (hopefully) made simple](http://ferd.ca/simhashing-hopefully-made-simple.html)
+
 - ### van Emde Boas Trees
     - [ ] [Divide & Conquer: van Emde Boas Trees (video)](https://www.youtube.com/watch?v=hmReJCupbNU&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=6)
     - [ ] [MIT Lecture Notes](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2012/lecture-notes/MIT6_046JS12_lec15.pdf)
 
 - ### Augmented Data Structures
     - [ ] [CS 61B Lecture 39: Augmenting Data Structures](https://youtu.be/zksIj9O8_jc?list=PL4BBB74C7D2A1049C&t=950)
+
+- ### k-D Trees
+    - great for finding number of points in a rectangle or higher dimension object
+    - a good fit for k-nearest neighbors
+    - [ ] [Kd Trees (video)](https://www.youtube.com/watch?v=W94M9D_yXKk)
+    - [ ] [kNN K-d tree algorithm (video)](https://www.youtube.com/watch?v=Y4ZgLlDfKDg)
 
 - ### Skip lists
     - "These are somewhat of a cult data structure" - Skiena
@@ -1621,6 +1688,7 @@ You're never really done.
     - [ ] [Linear Programming](https://www.youtube.com/watch?v=M4K6HYLHREQ)
     - [ ] [Finding minimum cost](https://www.youtube.com/watch?v=2ACJ9ewUC6U)
     - [ ] [Finding maximum value](https://www.youtube.com/watch?v=8AA_81xI3ik)
+    - [ ] [Solve Linear Equations with Python - Simplex Algorithm](https://www.youtube.com/watch?v=44pAWI7v5Zk)
 
 - ### Geometry, Convex hull (videos)
     - [ ] [Graph Alg. IV: Intro to geometric algorithms - Lecture 9](https://youtu.be/XIAQRlNkJAw?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3164)
