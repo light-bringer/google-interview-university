@@ -1,43 +1,30 @@
 # Google Interview University
 
-Translations: 
-- [中文版本](translations/README-cn.md)
-- translations in progress:
-    - [Español](https://github.com/jwasham/google-interview-university/issues/80)
-    - [हिन्दी](https://github.com/jwasham/google-interview-university/issues/81)
-    - [עברית](https://github.com/jwasham/google-interview-university/issues/82)
-    - [Bahasa Indonesia](https://github.com/jwasham/google-interview-university/issues/101)
-    - [Arabic](https://github.com/jwasham/google-interview-university/issues/98)
-    - [Vietnamese](https://github.com/jwasham/google-interview-university/issues/92)
-    - [Turkish](https://github.com/jwasham/google-interview-university/issues/90)
-    - [French](https://github.com/jwasham/google-interview-university/issues/89)
-    - [Russian](https://github.com/jwasham/google-interview-university/issues/87)
-    - [Ukrainian](https://github.com/jwasham/google-interview-university/issues/106)
-    - [Brazilian Portuguese](https://github.com/jwasham/google-interview-university/issues/113)
-    - [Korean](https://github.com/jwasham/google-interview-university/issues/118)
-    - [Polish](https://github.com/jwasham/google-interview-university/issues/122)
+Original: [англійською](README.md)
 
-## What is it?
+## Що це?
 
-This is my multi-month study plan for going from web developer (self-taught, no CS degree) to Google software engineer.
+Це мій багатомісячний навчальний план для перетворення з веб-розробника (самоучки без ступеню з CS)
+на розробника програмного забезпечення у Google.
 
-![Coding at the whiteboard - from HBO's Silicon Valley](https://dng5l3qzreal6.cloudfront.net/2016/Aug/coding_board_small-1470866369118.jpg)
+![Програмування у дошки — з серіалу «Silicon Valley» HBO](https://dng5l3qzreal6.cloudfront.net/2016/Aug/coding_board_small-1470866369118.jpg)
 
-This long list has been extracted and expanded from **Google's coaching notes**, so these are the things you need to know.
-There are extra items I added at the bottom that may come up in the interview or be helpful in solving a problem. Many items are from
-Steve Yegge's "[Get that job at Google](http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)" and are reflected
-sometimes word-for-word in Google's coaching notes.
+Цей довгий список був видобутий і розширений з **тренувальних нотаток Google**, отже це речі, які ви повинні знати.
+Тут є додаткові пункти, які я додав знизу — вони можуть зустрітися в інтерв’ю або бути корисними у вирішенні завдань.
+Багато пунктів взято з «[Get that job at Google](http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)» Steve Yegge,
+вони іноді дослівно відображаються в тренувальних нотатках Google.
 
-I've pared down what you need to know from what Yegge recommends. I've altered Yegge's requirements 
-from information received from my contact at Google. This is meant for **new software engineers** or those switching from 
-software/web development to software engineering (where computer science knowledge is required). If you have 
-many years of experience and are claiming many years of software engineering experience, expect a harder interview. 
-[Read more here](https://googleyasheck.com/what-you-need-to-know-for-your-google-interview-and-what-you-dont/).
+Я обрав, що вам потрібно знати, базуючись на рекомендаціях Yegge. Я вніс зміни до вимог Yegge на основі інформації,
+отриманої від мого контакту у Google. Це призначено для **нових розробників програмного забезпечення** або тих,
+що переходять з веб-розробки на розробку програмного забезпечення (де потрібне знання CS). Якщо у вас багаторічний
+досвід, і ви заявляєте про багаторічний досвід розробки програмного забезпечення, очікуйте на більш жорстке інтерв’ю.
+[Прочитайте більше](https://googleyasheck.com/what-you-need-to-know-for-your-google-interview-and-what-you-dont/).
 
-If you have many years of software/web development experience, note that Google views software engineering as 
-different from software/web development and they require computer science knowledge.
+Якщо у вас багато років досвіду веб-розробки, майте на увазі, що Google відрізняє розробку програмного забезпечення
+від веб-розробки, і вони потребують знання Computer Science.
 
-If you want to be a reliability engineer or systems engineer, study more from the optional list (networking, security).
+Якщо ви хочете бути інженером з надійності або системним інженером, вчіть більше за опціональним списком (мережі,
+безпека).
 
 ---
 
@@ -89,7 +76,6 @@ If you want to be a reliability engineer or systems engineer, study more from th
     - traversals: BFS, DFS
 - [Even More Knowledge](#even-more-knowledge)
     - [Recursion](#recursion)
-    - [Dynamic Programming](#dynamic-programming)
     - [Object-Oriented Programming](#object-oriented-programming)
     - [Design Patterns](#design-patterns)
     - [Combinatorics (n choose k) & Probability](#combinatorics-n-choose-k--probability)
@@ -115,6 +101,7 @@ If you want to be a reliability engineer or systems engineer, study more from th
 
 - [Additional Books](#additional-books)
 - [Additional Learning](#additional-learning)
+    - [Dynamic Programming](#dynamic-programming)
     - [Compilers](#compilers)
     - [Floating Point Numbers](#floating-point-numbers)
     - [Unicode](#unicode)
@@ -983,32 +970,6 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - [ ] [What Is Tail Recursion Why Is It So Bad?](https://www.quora.com/What-is-tail-recursion-Why-is-it-so-bad)
         - [ ] [Tail Recursion (video)](https://www.youtube.com/watch?v=L1jjXGfxozc)
 
-- ### Dynamic Programming
-    - **NOTE:** DP is a valuable technique, but it is not mentioned on any of the prep material Google provides. But you could get a problem where DP provides an optimal solution. So I'm including it.
-    - This subject can be pretty difficult, as each DP soluble problem must be defined as a recursion relation, and coming up with it can be tricky.
-    - I suggest looking at many examples of DP problems until you have a solid understanding of the pattern involved.
-    - [ ] Videos:
-        - the Skiena videos can be hard to follow since he sometimes uses the whiteboard, which is too small to see
-        - [ ] [Skiena: CSE373 2012 - Lecture 19 - Introduction to Dynamic Programming (video)](https://youtu.be/Qc2ieXRgR0k?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=1718)
-        - [ ] [Skiena: CSE373 2012 - Lecture 20 - Edit Distance (video)](https://youtu.be/IsmMhMdyeGY?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=2749)
-        - [ ] [Skiena: CSE373 2012 - Lecture 21 - Dynamic Programming Examples (video)](https://youtu.be/o0V9eYF4UI8?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=406)
-        - [ ] [Skiena: CSE373 2012 - Lecture 22 - Applications of Dynamic Programming (video)](https://www.youtube.com/watch?v=dRbMC1Ltl3A&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&index=22)
-        - [ ] [Simonson: Dynamic Programming 0 (starts at 59:18) (video)](https://youtu.be/J5aJEcOr6Eo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3558)
-        - [ ] [Simonson: Dynamic Programming I - Lecture 11 (video)](https://www.youtube.com/watch?v=0EzHjQ_SOeU&index=11&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
-        - [ ] [Simonson: Dynamic programming II - Lecture 12 (video)](https://www.youtube.com/watch?v=v1qiRwuJU7g&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=12)
-        - [ ] List of individual DP problems (each is short):
-            [Dynamic Programming (video)](https://www.youtube.com/playlist?list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
-    - [ ] Yale Lecture notes:
-        - [ ] [Dynamic Programming](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#dynamicProgramming)
-    - [ ] Coursera:
-        - [ ] [The RNA secondary structure problem (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/80RrW/the-rna-secondary-structure-problem)
-        - [ ] [A dynamic programming algorithm (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/PSonq/a-dynamic-programming-algorithm)
-        - [ ] [Illustrating the DP algorithm (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/oUEK2/illustrating-the-dp-algorithm)
-        - [ ] [Running time of the DP algorithm (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/nfK2r/running-time-of-the-dp-algorithm)
-        - [ ] [DP vs. recursive implementation (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/M999a/dp-vs-recursive-implementation)
-        - [ ] [Global pairwise sequence alignment (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/UZ7o6/global-pairwise-sequence-alignment)
-        - [ ] [Local pairwise sequence alignment (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/WnNau/local-pairwise-sequence-alignment)
-
 - ### Object-Oriented Programming
     - [ ] [Optional: UML 2.0 Series (video)](https://www.youtube.com/watch?v=OkC7HKtiZC0&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc)
     - [ ] Object-Oriented Software Engineering: Software Dev Using UML and Java (21 videos):
@@ -1016,6 +977,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - [OOSE: Software Dev Using UML and Java](https://www.youtube.com/playlist?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
     - [ ] SOLID OOP Principles:
         - [ ] [Bob Martin SOLID Principles of Object Oriented and Agile Design (video)](https://www.youtube.com/watch?v=TMuno5RZNeE)
+        - [ ] [SOLID Design Patterns in C# (video)](https://www.youtube.com/playlist?list=PL8m4NUhTQU48oiGCSgCP1FiJEcg_xJzyQ)
         - [ ] [SOLID Principles (video)](https://www.youtube.com/playlist?list=PL4CE9F710017EA77A)
         - [ ] S - [Single Responsibility Principle](http://www.oodesign.com/single-responsibility-principle.html) | [Single responsibility to each Object](http://www.javacodegeeks.com/2011/11/solid-single-responsibility-principle.html)
             - [more flavor](https://docs.google.com/open?id=0ByOwmqah_nuGNHEtcU5OekdDMkk)
@@ -1332,7 +1294,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
 
 ## Final Review
 
-    This section will have shorter videos that you can watch pretty quickly to review most of the important concepts.
+    This section will have shorter videos that can you watch pretty quickly to review most of the important concepts.
     It's nice if you want a refresher often.
 
 - [ ] Series of 2-3 minutes short subject videos (23 videos)
@@ -1518,6 +1480,31 @@ You're never really done.
 - [ ] [UNIX and Linux System Administration Handbook, 4th Edition](https://www.amazon.com/UNIX-Linux-System-Administration-Handbook/dp/0131480057/)
 
 ## Additional Learning
+
+- ### Dynamic Programming
+    - This subject can be pretty difficult, as each DP soluble problem must be defined as a recursion relation, and coming up with it can be tricky.
+    - I suggest looking at many examples of DP problems until you have a solid understanding of the pattern involved.
+    - [ ] Videos:
+        - the Skiena videos can be hard to follow since he sometimes uses the whiteboard, which is too small to see
+        - [ ] [Skiena: CSE373 2012 - Lecture 19 - Introduction to Dynamic Programming (video)](https://youtu.be/Qc2ieXRgR0k?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=1718)
+        - [ ] [Skiena: CSE373 2012 - Lecture 20 - Edit Distance (video)](https://youtu.be/IsmMhMdyeGY?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=2749)
+        - [ ] [Skiena: CSE373 2012 - Lecture 21 - Dynamic Programming Examples (video)](https://youtu.be/o0V9eYF4UI8?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=406)
+        - [ ] [Skiena: CSE373 2012 - Lecture 22 - Applications of Dynamic Programming (video)](https://www.youtube.com/watch?v=dRbMC1Ltl3A&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&index=22)
+        - [ ] [Simonson: Dynamic Programming 0 (starts at 59:18) (video)](https://youtu.be/J5aJEcOr6Eo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3558)
+        - [ ] [Simonson: Dynamic Programming I - Lecture 11 (video)](https://www.youtube.com/watch?v=0EzHjQ_SOeU&index=11&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
+        - [ ] [Simonson: Dynamic programming II - Lecture 12 (video)](https://www.youtube.com/watch?v=v1qiRwuJU7g&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=12)
+        - [ ] List of individual DP problems (each is short):
+            [Dynamic Programming (video)](https://www.youtube.com/playlist?list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
+    - [ ] Yale Lecture notes:
+        - [ ] [Dynamic Programming](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#dynamicProgramming)
+    - [ ] Coursera:
+        - [ ] [The RNA secondary structure problem (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/80RrW/the-rna-secondary-structure-problem)
+        - [ ] [A dynamic programming algorithm (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/PSonq/a-dynamic-programming-algorithm)
+        - [ ] [Illustrating the DP algorithm (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/oUEK2/illustrating-the-dp-algorithm)
+        - [ ] [Running time of the DP algorithm (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/nfK2r/running-time-of-the-dp-algorithm)
+        - [ ] [DP vs. recursive implementation (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/M999a/dp-vs-recursive-implementation)
+        - [ ] [Global pairwise sequence alignment (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/UZ7o6/global-pairwise-sequence-alignment)
+        - [ ] [Local pairwise sequence alignment (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/WnNau/local-pairwise-sequence-alignment)
 
 - ### Compilers
     - [ ] [How a Compiler Works in ~1 minute (video)](https://www.youtube.com/watch?v=IhC7sdYe-Jg)
